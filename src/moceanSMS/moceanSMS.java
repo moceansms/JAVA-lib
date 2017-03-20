@@ -153,7 +153,6 @@ public class moceanSMS {
 
         // INIT URL Object
         URL urlObject = new URL(url);
-        TrustAllCertificates.install();
         
         HttpURLConnection httpcon = (HttpURLConnection) urlObject.openConnection();
         if (url.matches("/http:/")) {
